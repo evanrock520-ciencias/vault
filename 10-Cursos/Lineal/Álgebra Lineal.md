@@ -16,7 +16,7 @@ semestre: 2026-2
 - Transformaciones simétricas*
 
 ## Evaluación
--
+- 100% Parciales
 
 ## Evaluaciones
 ```dataview

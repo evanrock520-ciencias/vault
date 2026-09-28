@@ -44,7 +44,7 @@ semestre: 2026-2
     4. Integración
 
 ## Evaluación
--
+- 100% Proyectos
 
 ## Evaluaciones
 ```dataview

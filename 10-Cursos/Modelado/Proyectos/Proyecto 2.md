@@ -1,16 +1,16 @@
 ---
 tipo: proyecto
 curso: "[[Modelado y Programación]]"
-estado: en-curso
+estado: pendiente
 entrega:
 repo:
 equipo: []
 ---
 
-# {{title}}
+# 8-Track
 
-**Repo:** 
-**Tablero:** [[Kanban {{title}}]]
+**Repo:** https://github.com/evanrock520-ciencias/8-Track
+**Tablero:** [[Kanban Proyecto 2]]
 
 ## Requisitos
 - 
@@ -25,9 +25,9 @@ equipo: []
 - [ ] 
 
 ## Reuniones
-### {{date}}
+### 2026-09-27
 - 
 
 ## Bitácora
-### {{date}}
+### 2026-09-27
 -

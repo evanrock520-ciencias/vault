@@ -17,13 +17,5 @@ temas: []
 - [ ] Ej. 1 📅 
 - [ ] Ej. 2 📅 
 - [ ] Ej. 3 📅 
-
-## Desarrollo
-
-### Ej. 1
-**Técnica:** [[ ]]
-
-### Ej. 2
-
 ## Dudas
 -

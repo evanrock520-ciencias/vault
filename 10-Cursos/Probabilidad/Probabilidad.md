@@ -24,7 +24,8 @@ semestre: 2026-2
 - Ley de los grandes números y el teorema central del límite
 
 ## Evaluación
--
+- 50% Parciales
+- 50% Semanales
 
 ## Evaluaciones
 ```dataview

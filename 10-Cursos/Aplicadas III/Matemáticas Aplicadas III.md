@@ -12,7 +12,8 @@ semestre: 2026-2
 - **4.** Teoremas de Green, Stokes y Gauss.
 
 ## Evaluación
--
+- 30% Tareas
+- 70% Parciales
 
 ## Evaluaciones
 ```dataview
