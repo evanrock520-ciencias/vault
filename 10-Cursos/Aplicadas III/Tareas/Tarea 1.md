@@ -13,6 +13,10 @@ temas: []
 
 **Entrega:** 
 
+## Temas
+- Cálculo de áreas y volúmenes
+- Cambio de orden de integración.
+- Descripción de regiones en 2D y 3D.
 ## Ejercicios
 - [ ] Ej. 1 📅 2026-10-02
 - [ ] Ej. 2 📅 2026-10-02

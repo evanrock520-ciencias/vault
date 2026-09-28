@@ -13,6 +13,8 @@ temas: []
 
 **Entrega:** 
 
+## Temas
+-
 ## Ejercicios
 - [ ] Ej. 1 📅 
 - [ ] Ej. 2 📅 
