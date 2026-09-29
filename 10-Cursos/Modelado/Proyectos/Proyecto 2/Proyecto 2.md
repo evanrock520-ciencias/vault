@@ -13,7 +13,7 @@ equipo: []
 **Tablero:** [[Kanban Proyecto 2]]
 
 ## Requisitos
-- Base de Datos
+- Base de Datos SQL
 - Interfaz Gráfica
 - Lenguaje de Dominio (para consultas)
 - Minero de etiquetas ID3v2.4
@@ -26,7 +26,7 @@ equipo: []
 | Fecha      | Decisión                                        | Alternativas           | Por qué                                                 |
 | ---------- | ----------------------------------------------- | ---------------------- | ------------------------------------------------------- |
 | 28/09/2026 | Utilizar C++ y QT para desarrollar el proyecto. | Rust e Iced, Go y Fyne | Me interesa aprender QT y estoy bastante cómodo con C++ |
-|            |                                                 |                        |                                                         |
+| 29/9/2026  |                                                 |                        |                                                         |
 
 ## Bugs conocidos
 - [ ] 
