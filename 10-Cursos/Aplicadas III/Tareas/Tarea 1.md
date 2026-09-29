@@ -18,7 +18,7 @@ temas: []
 - Cambio de orden de integración.
 - Descripción de regiones en 2D y 3D.
 ## Ejercicios
-- [ ] Ej. 1 📅 2026-10-02
+- [x] Ej. 1 📅 2026-10-02 ✅ 2026-09-28
 - [ ] Ej. 2 📅 2026-10-02
 - [ ] Ej. 3 📅 2026-10-02
 - [ ] Ej. 4 📅 2026-10-02

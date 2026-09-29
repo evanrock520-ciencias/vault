@@ -1,7 +1,8 @@
 [
   "obsidian-git",
-  "templater-obsidian",
   "dataview",
+  "templater-obsidian",
   "obsidian-tasks-plugin",
+  "calendar",
   "obsidian-kanban"
 ]

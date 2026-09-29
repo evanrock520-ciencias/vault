@@ -14,7 +14,7 @@ equipo: []
 
 ## Requisitos
 - Base de Datos
-- Interfaz Gráfica
+- Interfaz Gráfica (GTK, QT, JavaFX)
 - Lenguaje de Dominio (para consultas)
 - Minero de etiquetas ID3v2.4
 
@@ -31,10 +31,3 @@ equipo: []
 ## Bugs conocidos
 - [ ] 
 
-## Reuniones
-### 2026-09-27
-- 
-
-## Bitácora
-### 2026-09-27
--
