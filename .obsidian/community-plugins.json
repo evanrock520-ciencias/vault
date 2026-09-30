@@ -3,6 +3,11 @@
   "dataview",
   "templater-obsidian",
   "obsidian-tasks-plugin",
+<<<<<<< HEAD
   "calendar",
   "obsidian-kanban"
+=======
+  "obsidian-kanban",
+  "color-palette"
+>>>>>>> origin/main
 ]
