@@ -13,13 +13,8 @@ equipo: []
 **Tablero:** [[Kanban Proyecto 2]]
 
 ## Requisitos
-<<<<<<< HEAD
 - Base de Datos
 - Interfaz Gráfica (GTK, QT, JavaFX)
-=======
-- Base de Datos SQL
-- Interfaz Gráfica
->>>>>>> origin/main
 - Lenguaje de Dominio (para consultas)
 - Minero de etiquetas ID3v2.4
 
