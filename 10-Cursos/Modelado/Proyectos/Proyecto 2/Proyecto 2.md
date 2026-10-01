@@ -16,7 +16,7 @@ equipo: []
 - Base de Datos
 - Interfaz Gráfica (GTK, QT, JavaFX)
 - Lenguaje de Dominio (para consultas)
-- Minero de etiquetas ID3v2.4
+- Minero de etiquetas ID3v2.4. Debe funcionar sin la interfaz también.
 
 ## Opcionales
 - Reproductor MP3

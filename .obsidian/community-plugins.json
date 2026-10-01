@@ -2,9 +2,16 @@
   "calendar",
   "color-palette",
   "dataview",
+<<<<<<< HEAD
   "obsidian-kanban",
   "obsidian-git",
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "obsidian-latex-suite"
+=======
+  "obsidian-git",
+  "obsidian-kanban",
+  "obsidian-tasks-plugin",
+  "templater-obsidian"
+>>>>>>> origin/main
 ]
