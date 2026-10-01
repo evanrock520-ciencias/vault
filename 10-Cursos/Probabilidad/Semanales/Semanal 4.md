@@ -27,7 +27,22 @@ temas: []
 
 Una caja tiene 5 fichas rojas, 3 azules y 2 amarillas. Se sacan 2 fichas al azar **sin reemplazo**. Ganas $3 por cada ficha azul, pierdes $2 por cada roja y las amarillas no cuentan. Sea $X$ la ganancia total.
 
-La máxima cantidad de perdida es de 
+Definimos:
+- $N_{R}$ = número de bolas rojas seleccionadas
+- $N_{A} =$ número de bolas azules seleccionadas.
+
+Con lo que:
+$$X = 3 \cdot N_{A} - 2 \cdot N_{R}$$
+Así, si tomamos $2$ bolas.
+- (R, R) $\Rightarrow$ $X = -2 \cdot 2 = -4$ 
+- (R, Y) $\Rightarrow$ $X = -2$
+- (R, A) $\Rightarrow$ $X = 3 - 2 = 1$ 
+- (R, A) $\Rightarrow$ $X = 3 - 2 = 1$
+- (R, Y) $\Rightarrow$ $X = 3$
+- (A, A) $\Rightarrow$ $X = 3 \cdot 2 = 6$ 
+
+Es decir:
+$$X \in \{-4, -2, 1, 3, 6\}$$
 ## Qué falló
 - **Error:** 
 - **Corrección:** 
