@@ -43,6 +43,15 @@ Así, si tomamos $2$ bolas.
 
 Es decir:
 $$X \in \{-4, -2, 1, 3, 6\}$$
+De está manera:
+$$P(X = -4) = \frac{\binom{5}{2}}{\binom{10}{2}}$$
+$$P(X = -2) = \frac{\binom{5}{1} \cdot \binom{2}{1}}{\binom{10}{2}}$$
+$$P(X = 1) = \frac{\binom{5}{1} \cdot \binom{3}{1}}{\binom{10}{2}}$$
+$$P(X = 1) = \frac{\binom{5}{1} \cdot \binom{2}{1}}{\binom{10}{2}}$$
+$$P(X = 3) = \frac{\binom{3}{1} \cdot \binom{2}{1}}{\binom{10}{2}}$$
+$$P(X = 6) = \frac{\binom{3}{2}}{\binom{10}{2}}$$
+
+
 ## Qué falló
 - **Error:** 
 - **Corrección:** 
