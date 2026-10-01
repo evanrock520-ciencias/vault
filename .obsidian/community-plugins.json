@@ -1,1 +1,9 @@
-[]
+[
+  "calendar",
+  "color-palette",
+  "dataview",
+  "obsidian-git",
+  "obsidian-kanban",
+  "obsidian-tasks-plugin",
+  "templater-obsidian"
+]
