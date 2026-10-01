@@ -23,10 +23,10 @@ equipo: []
 
 ## Diseño
 ### Decisiones
-| Fecha      | Decisión                                        | Alternativas           | Por qué                                                 |
-| ---------- | ----------------------------------------------- | ---------------------- | ------------------------------------------------------- |
-| 28/09/2026 | Utilizar C++ y QT para desarrollar el proyecto. | Rust e Iced, Go y Fyne | Me interesa aprender QT y estoy bastante cómodo con C++ |
-| 29/9/2026  |                                                 |                        |                                                         |
+| Fecha      | Decisión                                                                               | Alternativas                                                       | Por qué                                                 |
+| ---------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------- |
+| 28/09/2026 | Utilizar C++ y QT para desarrollar el proyecto.                                        | Rust e Iced, Go y Fyne                                             | Me interesa aprender QT y estoy bastante cómodo con C++ |
+| 30/9/2026  | Estética Pixel Art (basada en el sitio web de codedex y la paleta de colores de Charm) | Simplemente usar la paleta de colores de Charm con algo más común. | Me gustó el estilo de Codedex                           |
 
 ## Bugs conocidos
 - [ ] 

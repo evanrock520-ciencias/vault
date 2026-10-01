@@ -3,9 +3,9 @@ tipo: evaluacion
 categoria: parcial
 curso: "[[Álgebra Lineal]]"
 fecha: 2026-09-18
-estado: hecho
+estado: calificado
 peso:
-calificacion:
+calificacion: "9.5"
 temas: []
 ---
 
@@ -16,13 +16,5 @@ temas: []
 - Subespacios
 - Generadores
 
-## Preparación
-- [ ] Revisar [[Cuaderno de errores]]
-- [ ] Hacer ejercicios de práctica
-- [ ] Repasar fórmulas
-
 ## Resultado
-**Calificación:** 
-
-## Errores cometidos
-(Pásalos también al [[Cuaderno de errores]])
+**Calificación:** 9.5
