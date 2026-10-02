@@ -16,7 +16,7 @@ RESERVED  = "and" | "or" | "not" | "like" | "by" | "asc" | "desc"
 
 - Los espacios y saltos de línea separan tokens y por lo demás se ignoran.
 - Una palabra reservada usada como valor **debe ir entre comillas**: `band: "The Not"`.
-- `=>` es un token de dos caracteres: `1990=>2025` y `1990 => 2025` son equivalentes.
+- => es un token de dos caracteres: `1990=>2025` y `1990 => 2025` son equivalentes.
 
 ## 2. Sintaxis (EBNF)
 
@@ -69,7 +69,7 @@ Estas reglas no se pueden expresar en la EBNF, pero el parser las necesita.
 
 1. **`or` implícito (lista de valores).** Tras un `or`, mira el token siguiente:
     - Si es `campo:`, `not` o `(`, el `or` es **lógico** (nivel `or_expr`).
-    - Si es un valor (o un entero/`=>` dentro de `year` y `track`), **continúa la lista** del filtro anterior.
+    - Si es un valor (o un entero/=> dentro de `year` y `track`), **continúa la lista** del filtro anterior.
 2. **`and` implícito.** Si, terminado un `primary`, el token siguiente puede iniciar otro `primary` (valor, `campo:`, `not`, `(`), se inserta un `and`. Si el siguiente es `sort`, `or`, `)` o fin de entrada, no.
 3. **`and` no hereda campo.** `performer: "A" and "B"` equivale a `performer: "A" and <búsqueda libre "B">`.
 4. **`X not Y` ≡ `X and not Y`.**
@@ -80,12 +80,12 @@ Estas reglas no se pueden expresar en la EBNF, pero el parser las necesita.
 
 **Coincidencia**
 
-|Elemento|Regla|
-|---|---|
-|`performer`, `artist`, `band`, `album`, `song`, `genre`, `member`|_contains_, sin distinguir mayúsculas ni acentos|
-|`path`|prefijo sobre la ruta, con separador `/` (`Music/Prog` incluye `Music/Prog/Yes`)|
-|Búsqueda libre|_contains_ en título, álbum, performer y género|
-|`similar`|_contains_ con tolerancia a erratas: distancia de edición ≤ 1 en palabras de hasta 5 letras, ≤ 2 en las más largas|
+| Elemento                                                          | Regla                                                                                                              |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `performer`, `artist`, `band`, `album`, `song`, `genre`, `member` | _contains_, sin distinguir mayúsculas ni acentos                                                                   |
+| `path`                                                            | prefijo sobre la ruta, con separador `/` (`Music/Prog` incluye `Music/Prog/Yes`)                                   |
+| Búsqueda libre                                                    | _contains_ en título, álbum, performer y género                                                                    |
+| `similar`                                                         | _contains_ con tolerancia a erratas: distancia de edición ≤ 1 en palabras de hasta 5 letras, ≤ 2 en las más largas |
 
 **Categorías**
 
@@ -95,9 +95,9 @@ Estas reglas no se pueden expresar en la EBNF, pero el parser las necesita.
 **Rangos (`year`, `track`)**
 
 - Ambos extremos son inclusivos.
-- `5` ≡ `5 => 5`. `2010 =>` es abierto por la derecha y `=> 2000` por la izquierda.
+- `5` ≡ `5 => 5`. `2010 =>` es abierto por la derecha y => 2000 por la izquierda.
 - `a => b` con `a > b` es error.
-- Un `=>` sin ningún número es error.
+- Un => sin ningún número es error.
 - `year` filtra por el **año de lanzamiento de la canción**.
 - `track: 3` es válido sin `album` y aplica a cualquier álbum.
 
@@ -134,7 +134,7 @@ El `or` implícito entre valores de un filtro no entra en la tabla, porque es un
 
 - Un año o pista no numérico: `se esperaba un número después de "year:"`.
 - Rango invertido (`2020 => 2010`).
-- `=>` sin números.
+- => sin números.
 - Paréntesis sin cerrar.
 - `sort` dentro de paréntesis.
 - Palabra reservada usada como valor sin comillas.
@@ -208,10 +208,3 @@ performer: "Angel Olsen" or "Sharon Van Etten" not album: "Big Time"
 // ≡ performer: ("Angel Olsen" or "Sharon Van Etten") and not album: "Big Time"
 ```
 
-## 8. Fuera de la v1
-
-Quedan fuera, y se pueden añadir como un campo más: `duration`, `rating`, `format`, `added`, `lyrics`, coincidencia exacta (`="..."`), y paginación o límite (que serían parámetros de la aplicación).
-
-Hay dos cosas que decidí yo y que conviene que confirmes: el orden por omisión cuando no hay `sort`, y que `sort_key` incluya `performer`, que no estaba en tu versión original.
-
-Si quieres, te lo dejo también como archivo `.md`. Para el siguiente paso, dime el lenguaje de implementación y el destino del transpilador (SQL u otro) y armo el esqueleto de tokens, AST y parser.
