@@ -3,7 +3,7 @@ tipo: evaluacion
 categoria: semanal
 curso: "[[Probabilidad]]"
 fecha: 2026-10-01
-estado: pendiente
+estado: hecho
 peso:
 calificacion:
 temas: []

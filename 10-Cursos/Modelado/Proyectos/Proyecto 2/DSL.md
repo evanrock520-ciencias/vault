@@ -19,8 +19,18 @@ Los filtros temporales:
 
 ```txt
 from: 1990
-from: 1990 to 2000
 to: 2025
+```
+
+Los filtros de apariencia:
+
+```txt
+similar: <category> like word
+
+// Donde
+category = song | performer |  album | genre
+
+similar: song like "Black"
 ```
 
 Las operaciones lógicas básicas:
@@ -61,7 +71,7 @@ busca en todos los campos (título, álbum, intérprete y género).
 La precedencia es:
 
 ```txt
-not > and > or
+or implicito > not > and > or
 ```
 
 Los términos seguidos sin operador se unen con `and` implícito, de modo que `X not Y` equivale a `X and not Y`. Se pueden usar paréntesis para agrupar.
@@ -72,6 +82,10 @@ performer: "Angel Olsen" or "Sharon Van Etten" not album: "Big Time"
 
 genre: "Art Pop" from: 2010 to 2020 sort: desc by release
 ```
+
+> Notas:
+> **Tanto artist como band** los define el usuario, siempre están dentro de la categoría **performer**
+> **Member** lo define el usuario. 
 
 ---
 
