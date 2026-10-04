@@ -1,4 +1,3 @@
-
 # MuQL (Musical Query Language)
 ## 1. Léxico
 

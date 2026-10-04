@@ -1,0 +1,1 @@
+![Minero](diagrams/miner.drawio.svg)
