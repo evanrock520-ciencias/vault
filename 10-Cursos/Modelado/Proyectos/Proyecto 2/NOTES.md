@@ -186,7 +186,7 @@ flowchart LR
     G --> H["Hydration a std::vector<Song>"]
 ```
 
-- **Tokenización:** Mapeo de literales, números, símbolos (`:`, `=>`, `:=`, `(`, `)`) y palabras reservadas (`and`, `or`, `not`, `similar`, `sort`, `from`, `to`, `year`, `track`, etc.).
+- **Tokenización:** Mapeo de literales, números, símbolos (`:`, =>, `:=`, `(`, `)`) y palabras reservadas (`and`, `or`, `not`, `similar`, `sort`, `from`, `to`, `year`, `track`, etc.).
 - **Desambiguación:** Inserción de nodos `AND` implícitos entre términos contiguos y agrupación de listas de valores disyuntivas (`OR` implícito).
 - **Traducción desacoplada:** El `SQLVisitor` transforma las ramas lógicas del AST en cláusulas `WHERE` y `ORDER BY` con parámetros vinculados (`bindValue`), previniendo inyecciones SQL.
 
