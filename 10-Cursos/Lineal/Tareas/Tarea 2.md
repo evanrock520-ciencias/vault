@@ -49,12 +49,29 @@ $\therefore$ $\{u,v\}$ es linealmente dependiente $\iff u = kv$ ó $v = ku$ para
 
 **P.D:** $S$ es linealmente dependiente si, y solamente si $S = {0}$ o existen $v, u_1, u_2, \dots, u_n$ vectores distintos en $S$ tales que $v$ es una combinación lineal de $u_1, u_2, \dots, u_n$.
 
-($\impliedby$) 
-1. Si $S = 0 \implies 0 = k_{i} \cdot 0$, así si $k \neq 0$, la combinación lineal no es trivial.
-$\therefore S$ es linealmente independiente.
+**($\implies$)** Sean $v_1, \dots, v_n$ y $c_1, \dots, c_n$. Elige $j$ con $c_j \neq 0$. Hay dos casos según $n$.
 
-2. Si 
+**Caso 1: $n = 1$.** Entonces $c_1 w_1 = 0$ con $c_1 \neq 0$, así que $w_1 = c_1^{-1}\cdot 0 = 0$. Ahora hay dos opciones:
+
+- Si $S = {0}$, ya terminaste.
+- Si $S \neq {0}$, existe $u \in S$ con $u \neq 0$. Entonces $0$ y $u$ son vectores distintos de $S$ y  
+    $$0 = 0\cdot u,$$  
+    o sea que $v = 0$ es combinación lineal de $u_1 = u$ (con $k_1 = 0$).
+
+**Caso 2: $m \geq 2$.** Como $c_j \neq 0$, existe $c_j^{-1} \in \mathbb{K}$. Despejando $w_j$ en  
+$$c_jw_j = -\sum_{i \neq j} c_iw_i,$$  
+queda  
+$$w_j = \sum_{i \neq j} \left(-c_j^{-1}c_i\right) w_i.$$  
+Toma $v = w_j$ y como $u_1, \dots, u_{m-1}$ los $w_i$ con $i \neq j$. Son vectores distintos de $S$ (porque los $w_i$ lo eran), hay al menos uno ($m - 1 \geq 1$), y $v$ es combinación lineal de ellos. $\blacksquare$
+
+**($\impliedby$)**
+
+1. Si $S = {0}$, entonces $1\cdot 0 = 0$ con coeficiente $1 \neq 0$. Luego $S$ es linealmente dependiente.
     
+2. Si existen $v, u_1, \dots, u_n \in S$ distintos con $v = k_1u_1 + \dots + k_nu_n$, entonces  
+    $$0 = 1\cdot v - k_1u_1 - \dots - k_nu_n.$$  
+    Como los vectores son distintos, el coeficiente de $v$ es $1 \neq 0$, así que la combinación es no trivial. Luego $S$ es linealmente dependiente. $\blacksquare$
+	
 - [ ] **7.** Sea $S := {u_1, u_2, \dots, u_n}$ un conjunto finito de vectores. Demostrar que $S$ es linealmente dependiente si, y solamente si $u_1 = 0$ o $u_{k+1} \in \text{span}({u_1, u_2, \dots, u_k})$ para alguna $1 \le k < n$.
     
 - [ ] **8.** Sea $V$ un $\mathbb{K}$-espacio vectorial.
